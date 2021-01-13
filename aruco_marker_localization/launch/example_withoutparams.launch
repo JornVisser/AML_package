@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node
+    pkg="aruco_marker_localization"
+    type="image_from_webcam_node.py"
+    name="image_publisher"
+    required="true"
+  />
+
+  <node
+    pkg="aruco_marker_localization"
+    type="pose_estimation_node.py"
+    name="pose_publisher"
+    output="screen"
+  />
+
+</launch>
