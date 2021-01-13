@@ -8,16 +8,6 @@
     required="true"
   />
 
-  <rosparam
-    command="load"
-    file="$(find aruco_marker_localization)/config/marker_settings.yaml"
-  />
-
-  <rosparam
-    command="load"
-    file="$(find aruco_marker_localization)/config/camera_parameters_webcam.yaml"
-  />
-
   <node
     pkg="aruco_marker_localization"
     type="pose_estimation_node.py"
